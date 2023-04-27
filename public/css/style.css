@@ -1,0 +1,25 @@
+:root{
+    
+    --dark: black;
+    --light: white;
+}
+
+body{
+    font-family: 'Nanum Myeongjo', serif;
+    /* background-color: rgb(24, 23, 23); */
+    
+}
+
+h1{
+    
+}
+
+.imgOrizontal{
+    width: 600px;
+    height: 400px;
+}
+
+.imgVertical{
+    width: 400px;
+    height: 600px;
+}
