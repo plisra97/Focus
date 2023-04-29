@@ -55,7 +55,7 @@
                 <h3 class="display 3 fw-bold">{{ $servizio['name'] }} </h3>
                     <p> Prezzo: {{ $servizio ['price'] }}</p>
                     <p> Dettagli {{ $servizio['details'] }}</p>
-                    <a href="{{route('servizi')}}" class="btn btn-dark">Torna indietro</a>
+                    <a href="{{route('dettaglio-servizio', ['id' => $servizio['id']])}}" class="btn btn-dark">Torna indietro</a>
 
             </div>
         </div>
