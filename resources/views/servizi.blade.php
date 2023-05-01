@@ -51,7 +51,7 @@
                       <div class="card-body">
                       <h5 class="card-title">{{ $servizio['name'] }}</h5>
                       {{-- <p class="card-text"> {{ $servizio['details'] }} </p> --}}
-                      <a href="{{route('dettaglio-servizio', ['id' => $servizio['id']])}}" class="btn btn-dark">Go somewhere</a>
+                      <a href="{{route('dettaglio-servizio', ['id' => $servizio['id']])}}" class="btn btn-dark">Scopri di più</a>
                       </div>
                   </div>
               </div>
