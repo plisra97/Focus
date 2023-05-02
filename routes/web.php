@@ -1,8 +1,8 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ServicesController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // Rotta Pubblica
-Route::get('/', function () {
-    return view('welcome');
-})-> name('homepage');
+Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
+Route::get('/contattaci', [PublicController::class, 'contact_us'])->name('contact_us');
+Route::post('/contattaci/submit', [PublicController::class, 'contact_us_submit'])->name('contact_us.submit');
 
 
 // Rotta chi siamo
